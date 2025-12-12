@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT DETAILS</title>
+   <link rel="stylesheet" href="stylesheet/sellercart.css">
+</head>
+<body>
+     <a href="signup.html"> SIGN UP PAGE</a>
+    <a href="productcart.html">PRODUCT CART PAGE</a>
+    <a href="SMSbaseproject.html">MY SMS SHOP</a>
+
+    <header role="banner" aria-label="Submit product header">
+        <h1>SELLER'S FORM</h1>
+    <h2>Send Your Product Details</h2>
+    <p>Submit your item and we will receive it via SMS to list and help you sell.</p>
+  </header>
+
+  <main role="main">
+    <form id="productForm" class="card">
+      <div class="grid grid-2">
+        <div>
+          <label class="required" for="sellerName">Your full name</label>
+          <input type="text" id="sellerName" name="sellerName"  required />
+        </div>
+        <div>
+          <label class="required" for="sellerPhone">Your phone number</label>
+          <input type="tel" id="sellerPhone" name="sellerPhone" required />
+          <div class="help">Include country code if outside Cameroon (e.g., +237...).</div>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div>
+          <label class="required" for="productName">Product name</label>
+          <input type="text" id="productName" name="productName" required />
+        </div>
+        <div>
+          <label class="required" for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="">Select a category</option>
+            <option>farm produce</option>
+            <option>Home & Kitchen</option>
+            <option>Fashion</option>
+            <option>Beauty & Health</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div>
+          <label class="required" for="price">Price (CFAF)</label>
+          <input type="number" id="price" name="price" min="0" step="1" required />
+        </div>
+        <div>
+          <label class="required" for="quantity">Quantity</label>
+          <input type="number" id="quantity" name="quantity" min="1" step="1" required />
+        </div>
+      </div>
+
+      <div>
+        <label class="required" for="location">Your location (city/neighborhood/town)</label>
+        <input type="text" id="location" name="location"  required />
+      </div>
+
+      <div>
+        <label class="required" for="description">Product description</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+
+      <div class="row" style="margin-top:6px;">
+        <input type="checkbox" id="consent" name="consent" required />
+        <label for="consent">I confirm these details are accurate and agree to be contacted about this listing.</label>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="plain" id="previewBtn">Preview SMS</button>
+        <button type="submit" class="primary">Send to shop via SMS</button>
+        <button type="button" class="secondary" id="copySmsBtn">Copy SMS text</button>
+      </div>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+
+      <div style="margin-top:12px;">
+        <label for="smsPreview">SMS text (you can copy and send from any phone):</label>
+        <div id="smsPreview" class="sms-box" aria-live="polite">Fill the form, then click “Preview SMS”.</div>
+        <div class="help">Send this SMS to: +681944841.</div>
+      </div>
+    </form>
+
+    <footer>
+      By submitting, you allow us to receive your product details by SMS to evaluate and list for sale.
+    </footer>
+  </main>
+  
+</body>
+</html>
