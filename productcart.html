@@ -4,86 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRODUCT CART PAGE</title>
-    <link rel="stylesheet" href="productcart.css">
+    <link rel="stylesheet" href="stylesheet/productcart.css">
 </head>
 <body>
    <a href="SMSbaseproject.html">MY SMS  SHOP</a>
     <a href="sellercart.html">PRODUCT DETAILS</a>
      <a href="signup.html"> SIGN UP PAGE</a>
+     <a href="paymentpage.html"> PAYMENT PAGE</a>
 
   
   <header>
     <h1>PRODUCTS/CATEGORIES CART</h1>
     <p>Shop fresh farm product with quality  here at very affordable prices & order instantly via SMS</p>
   </header>
-
-  <div class="container">
-    <h2>fresh vergitables</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="image form/image1.jpg" alt="image1" width="200px" height="180px">
-        <h3>freshly harvest</h3>
-        <p class="price">varies</p>
-        <p>where freshnest makes a difference</p>
-        <a class="sms-button" href="sms:+237681944841?&body=Order%20fresh%20vegitables">Order via SMS</a>
-      </div>
-    </div>
-
-    <!-- poretrey -->
-    <h2> poretrey farm</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="image form/image12.jpg" alt="image12" width="200px" height="180px" >
-        <h3>chicken of different sizes</h3>
-        <label for="CATEGORIES">Choose any category of your choice and place your order</label>
-        <select name="category" id="category" required>
-            <option value="Handbag">chicks - </option>
-            <option value="purse">spring chicken </option>
-            <option value="labtopbag">grown chicken -</option>
-        </select>
-        <p>quality and sizeble chicken</p>
-        <a class="sms-button" href="sms:+237681944841?&body=Order%20chicken%20  of different quantities">Order via SMS</a>
-      </div>
-    </div>
-
-    <!-- agric -->
-    <h2>agric products</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="image form/image9.jpg" alt="image9" width="200px" height="180px">
-        <h3>
-          <p>we got you covered in agric products</p>
-        </h3>
-        <label for="category">all types available</label>
-        <p>we us healthy feeding is assured</p>
-        <a class="sms-button" href="sms:+237681944841?&body=Order%20agric%20products">Order via SMS</a>
-      </div>
-    </div>
-
-    <!-- meat -->
-    <h2>fresh meat</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="image form/image15.jfif" alt="image15" width="200px" height="180px">
-        <h3>fresh meat of all kinds available</h3>
-        <p class="price">price varries</p>
-        <p>a place where customer satisfaction matters most</p>
-        <a class="sms-button" href="sms:+237681944841?&body=Order%20fresh%20meat">Order via SMS</a>
-      </div>
-    </div>
-
-    <!-- palm oil -->
-    <h2>palm oil</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="image form/image15.jfif" alt="image15" width="200px" height="180px">
-        <h3>pail oil production</h3>
-        <label for="palm">palm oil</label>
-        <p>well milled and clean palm oil available</p>
-        <a class="sms-button" href="sms:+237681944842?&body=Order%20palm%20oil">Order via SMS</a>
-      </div>
-    </div>
-
-  </div>  
-</body>
+   <div class="cart-container">
+     <div class="cart-item">
+       <img src="image form/image2.jpg" alt="image2">
+        <div class="item-details">
+           <h4>fresh vegitables</h4>
+            <p>sold in killograms</p>
+           </div>
+            <div class="item-price">2000fcfa</div>
+           </div>
+     <div class="cart-item">
+       <img src="image form/image7.jpg" alt="image7">
+         <div class="item-details"> 
+             <h4>freshly harvest carbage</h4>
+               <p>this is harversted directly from the farm</p>
+            </div>
+            <div class="item-price">1000fcfa</div> 
+            </div>
+     <div class="cart-item">
+                     <img src="image form/palm-kernel-2.jpg" alt="palm-kernel-2">
+                     <div class="item-details">
+                      <h4>palm oil/</h4>
+                      <p>clean annd well milled parm oil available</p>
+                      sold in littres
+                     </div>
+                     <div class="item-price"> 2000fcfa</div>
+                  </div>
+                   <div class="checkout">
+                     <button>Proceed to Checkout</button> 
+                    </div> 
+              
+  </div>                
+</body>          
 </html>
